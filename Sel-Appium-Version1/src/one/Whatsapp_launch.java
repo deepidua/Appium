@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -39,7 +40,8 @@ public class Whatsapp_launch {
 				capabilities);
 
 		dr.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-
+		dr.findElement((By.xpath("//*[@text='Test']"))).click();
+	
 		Thread.sleep(10000);
 
 	}
