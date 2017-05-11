@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="39216" started-at="2017-05-01T06:07:49Z" finished-at="2017-05-01T06:08:28Z">
+  <suite name="Default suite" duration-ms="14019" started-at="2017-05-11T11:10:56Z" finished-at="2017-05-11T11:11:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="39216" started-at="2017-05-01T06:07:49Z" finished-at="2017-05-01T06:08:28Z">
+    <test name="Default test" duration-ms="14019" started-at="2017-05-11T11:10:56Z" finished-at="2017-05-11T11:11:10Z">
       <class name="one.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:one.NewTest@7bfcd12c]" name="beforeTest" is-config="true" duration-ms="25589" started-at="2017-05-01T11:37:49Z" finished-at="2017-05-01T11:38:14Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:one.NewTest@1e88b3c]" name="beforeTest" is-config="true" duration-ms="12087" started-at="2017-05-11T16:40:56Z" finished-at="2017-05-11T16:41:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:one.Reg_Test@42f30e0a]" name="beforeTest" is-config="true" duration-ms="10811" started-at="2017-05-01T11:38:14Z" finished-at="2017-05-01T11:38:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:one.NewTest@7bfcd12c]" name="f" duration-ms="1843" started-at="2017-05-01T11:38:25Z" finished-at="2017-05-01T11:38:27Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:one.NewTest@1e88b3c]" name="f" duration-ms="1903" started-at="2017-05-11T16:41:08Z" finished-at="2017-05-11T16:41:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:one.NewTest@7bfcd12c]" name="afterTest" is-config="true" duration-ms="8" started-at="2017-05-01T11:38:28Z" finished-at="2017-05-01T11:38:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:one.Reg_Test@42f30e0a]" name="afterTest" is-config="true" duration-ms="8" started-at="2017-05-01T11:38:28Z" finished-at="2017-05-01T11:38:28Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:one.NewTest@1e88b3c]" name="afterTest" is-config="true" duration-ms="7" started-at="2017-05-11T16:41:10Z" finished-at="2017-05-11T16:41:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- one.NewTest -->
-      <class name="one.Reg_Test">
-        <test-method status="PASS" signature="f()[pri:0, instance:one.Reg_Test@42f30e0a]" name="f" duration-ms="940" started-at="2017-05-01T11:38:27Z" finished-at="2017-05-01T11:38:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- one.Reg_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
