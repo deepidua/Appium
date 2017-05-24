@@ -32,7 +32,7 @@ public class Calci_Emulator {
 		capabilities.setCapability("BROWSER_NAME","Android");
 		capabilities.setCapability("deviceName","AVD_for_Redmi_Prime");
 		capabilities.setCapability("PLATFORM","Android");
-		capabilities.setCapability("VERSION","6.0.0");
+		capabilities.setCapability("VERSION","6.0.1");
 		capabilities.setCapability("appPackage","com.android.calculator2");
 		capabilities.setCapability("appActivity","com.android.calculator2.Calculator");
 		

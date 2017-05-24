@@ -3,12 +3,14 @@ package one;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import javafx.scene.web.WebView;
+
+
 
 import org.junit.After;
 import org.junit.Before;
@@ -23,7 +25,19 @@ WebDriver driver;
 	@Before
 	public void setup() throws MalformedURLException
 	{
-		DesiredCapabilities capabilities = DesiredCapabilities.android();
+		File app = new File(System.getProperty("user.dir")
+				+ "\\apks\\com.android.chrome_v57.0.apk");
+DesiredCapabilities capabilities = DesiredCapabilities.android();
+		
+		capabilities.setCapability("BROWSER_NAME","Android");
+		capabilities.setCapability("deviceName","AVD_for_Redmi_Prime");
+		capabilities.setCapability("PLATFORM","Android");
+		capabilities.setCapability("VERSION","6.0.1");
+		capabilities.setCapability("appPackage","com.android.chrome");
+		capabilities.setCapability("appActivity","com.google.android.apps.chrome.Main");
+		driver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		/*DesiredCapabilities capabilities = DesiredCapabilities.android();
 		capabilities.setCapability("BROWSER_NAME","chrome");
 		capabilities.setCapability("deviceName","Redmi 3s");
 		capabilities.setCapability("PLATFORM","Android");
@@ -35,13 +49,14 @@ WebDriver driver;
 		driver = new AndroidDriver( new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		//WebView.setWebContentsDebuggingEnabled(true); 
-		
+*/		
 	}
 	
 	@Test
 	public void test_login()
 	{
-		driver.get("http://automationpractice.com/index.php");   //*[@id="header"]/div[2]/div/div/nav/div[1]/a
+		driver.get("http://automationpractice.com/index.php");   
+		//*[@id="header"]/div[2]/div/div/nav/div[1]/a
 		//driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		//driver.findElement((By.xpath("//*[@id='header']/div[2]/div/div/nav/div[1]/a"))).click();
 	
